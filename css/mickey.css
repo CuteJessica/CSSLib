@@ -1,0 +1,186 @@
+﻿body
+{
+	width: 100%;
+}
+
+.container
+{
+	margin: 0 auto;
+	width: 500px;
+	height: 600px;
+}
+
+.mickey-face
+{
+	transition: all .5s;
+	position: relative;
+	top: 20%;
+	width: 60%;
+	height: 50%;
+	border-radius: 50%;
+	background: #250c45;
+	-webkit-transform: rotate(-10deg);
+}
+
+	.mickey-face:hover
+	{
+		-webkit-transform: rotate(10deg);
+	}
+
+		.mickey-face:hover .mickey-face-shy,
+		.mickey-face:hover .mickey-face-shy:before
+		{
+			display: block;
+		}
+
+.mickey-face-shy
+{
+	display: none;
+	border: dotted 3px #edadc8;
+	width: 5%;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+
+	.mickey-face-shy.left-shy
+	{
+		left: 10%;
+	}
+
+	.mickey-face-shy.right-shy
+	{
+		right: 10%;
+	}
+
+.mickey-face-inner
+{
+	width: 98%;
+	height: 50%;
+	border: 5px solid #250c45;
+	border-radius: 50%;
+	background: #f8f7fd;
+	position: absolute;
+	bottom: 0;
+	left: 0.5%;
+}
+
+	.mickey-face-inner:before,
+	.mickey-face-inner:after
+	{
+		content: '';
+		display: block;
+		background: #f8f7fd;
+		border-radius: 50%;
+		width: 57%;
+		height: 150%;
+		position: absolute;
+		top: -76%;
+	}
+
+	.mickey-face-inner:before
+	{
+		left: 10%;
+		-webkit-transform: rotate(-20deg);
+	}
+
+	.mickey-face-inner:after
+	{
+		right: 12%;
+		-webkit-transform: rotate(20deg);
+	}
+
+.mickey-ear
+{
+	width: 50%;
+	height: 50%;
+	border-radius: 50%;
+	background: #250c45;
+	position: absolute;
+	top: -25%;
+	z-index: -1;
+}
+
+	.mickey-ear.left-ear
+	{
+		left: -25%;
+	}
+
+	.mickey-ear.right-ear
+	{
+		right: -25%;
+	}
+
+.mickey-eye
+{
+	width: 13%;
+	height: 23%;
+	border-radius: 50%;
+	background: #250c45;
+	z-index: 1;
+	position: absolute;
+	top: 35%;
+}
+
+	.mickey-eye:before
+	{
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 15px solid transparent;
+		border-right: 30px solid #f8f7fd;
+		border-bottom: 15px solid transparent;
+		position: relative;
+		top: 30%;
+		left: 50%;
+	}
+
+	.mickey-eye.left-eye
+	{
+		left: 20%;
+	}
+
+	.mickey-eye.right-eye
+	{
+		right: 22%;
+	}
+
+.mickey-nose
+{
+	width: 25%;
+	height: 15%;
+	border-radius: 50%;
+	background: #250c45;
+	z-index: 1;
+	position: relative;
+	margin: 0 auto;
+	top: 58%;
+}
+
+.mickey-mouth
+{
+	width: 15%;
+	height: 12%;
+	border-top: 0;
+	border-left: 10px solid #250e45;
+	border-right: 10px solid #250e45;
+	border-bottom: 10px solid #250e45;
+	border-radius: 5% 5% 80% 80%;
+	position: relative;
+	margin: 0 auto;
+	top: 62%;
+}
+
+	.mickey-mouth:before
+	{
+		content: '';
+		display: block;
+		width: 160%;
+		height: 60%;
+		background: #f8f7fd;
+		margin: -11px;
+		/* margin-top: -10px; */
+		position: absolute;
+		top: 10px;
+	}
